@@ -23,29 +23,41 @@ document.querySelectorAll(".nav-link").forEach((link) => {
 const hamburger = document.getElementById("hamburger");
 const navMenu = document.getElementById("navLinks");
 
+function closeMenu() {
+  hamburger.classList.remove("open");
+  navMenu.classList.remove("open");
+  hamburger.setAttribute("aria-expanded", "false");
+  document.body.style.overflow = "";
+}
+
 if (hamburger && navMenu) {
   hamburger.addEventListener("click", () => {
     const isOpen = hamburger.classList.toggle("open");
     navMenu.classList.toggle("open");
     hamburger.setAttribute("aria-expanded", isOpen);
-    // prevent body scroll when overlay is open
     document.body.style.overflow = isOpen ? "hidden" : "";
   });
-  navMenu.querySelectorAll(".nav-link").forEach((link) => {
-    link.addEventListener("click", () => {
-      hamburger.classList.remove("open");
-      navMenu.classList.remove("open");
-      hamburger.setAttribute("aria-expanded", "false");
-      document.body.style.overflow = "";
-    });
+
+  // Close when any link (including mobile CTA) is clicked
+  navMenu.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", closeMenu);
   });
-  // close on Escape key
+
+  // Close on Escape key
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && hamburger.classList.contains("open")) {
-      hamburger.classList.remove("open");
-      navMenu.classList.remove("open");
-      hamburger.setAttribute("aria-expanded", "false");
-      document.body.style.overflow = "";
+      closeMenu();
+    }
+  });
+
+  // Close when clicking outside the nav panel
+  document.addEventListener("click", (e) => {
+    if (
+      hamburger.classList.contains("open") &&
+      !navMenu.contains(e.target) &&
+      !hamburger.contains(e.target)
+    ) {
+      closeMenu();
     }
   });
 }
