@@ -1189,17 +1189,22 @@ ul {
     margin: 0 auto;
   }
   .hero-image-wrap {
-    justify-content: flex-start;
-    overflow: visible;
-    z-index: 1;
+    justify-content: center;
+    width: 100%;
   }
   .hero-image-card {
+    width: 100%;
     max-width: 100%;
-    overflow: visible;
+    overflow: hidden;
+    border-radius: 16px;
   }
   .hero-img {
-    height: clamp(180px, 28vh, 260px);
-    z-index: 1;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: center;
+    display: block;
   }
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
