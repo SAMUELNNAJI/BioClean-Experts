@@ -223,7 +223,7 @@ ul {
 }
 .hamburger-inner span {
   display: block;
-  height: 2.5px;
+  height: 3px;
   background: var(--white);
   border-radius: 99px;
   transform-origin: center;
@@ -1049,7 +1049,7 @@ ul {
 /* ===== RESPONSIVE ===== */
 
 /* ===== TABLET & MOBILE NAV (hamburger) ===== */
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   /* ── overlay menu ── */
   .nav-links {
     display: flex;
