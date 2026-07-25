@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact — BioClean Experts</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+          <img
+            src="assets/image/bioclean-logo.png"
+            alt="BioClean Experts"
+            class="navbar-logo-img"
+          />
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+          <li class="mobile-cta-wrap">
+            <a href="contact.html" class="mobile-cta">Book now &rarr;</a>
+          </li>
+        </ul>
+        <a href="contact.html" class="btn-book">Book now</a>
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span class="hamburger-inner">
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="contact-hero">
+      <div class="contact-hero-container">
+        <span class="contact-hero-tag">CONTACT</span>
+        <h1 class="contact-hero-title">Let's make your space shine.</h1>
+        <p class="contact-hero-desc">
+          Send us a quick message and we'll get back to you with a fast, honest
+          quote.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== FORM + INFO ===== -->
+    <section class="contact-body" style="background-color: #f3fbff">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- LEFT: Form -->
+          <div class="contact-form-card">
+            <h2 class="form-card-title">Request a quote</h2>
+            <form id="contactForm" novalidate>
+              <div class="cf-row">
+                <div class="cf-group">
+                  <label for="cf-name"
+                    >Your name <span class="req">*</span></label
+                  >
+                  <input type="text" id="cf-name" placeholder="" required />
+                </div>
+                <div class="cf-group">
+                  <label for="cf-email">Email <span class="req">*</span></label>
+                  <input type="email" id="cf-email" placeholder="" required />
+                </div>
+              </div>
+
+              <div class="cf-row">
+                <div class="cf-group">
+                  <label for="cf-phone">Phone</label>
+                  <input type="tel" id="cf-phone" placeholder="" />
+                </div>
+                <div class="cf-group">
+                  <label for="cf-service">Service</label>
+                  <select id="cf-service">
+                    <option value="">Select a service</option>
+                    <option>Industrial &amp; Post-Construction Cleaning</option>
+                    <option>Deep Cleaning</option>
+                    <option>Interior Designs</option>
+                    <option>Professional Painting</option>
+                    <option>Laundry Services</option>
+                    <option>Car Wash</option>
+                    <option>Disinfection Services</option>
+                    <option>Window &amp; Glass Cleaning</option>
+                    <option>3D Epoxy Floor Installation</option>
+                    <option>Move-In / Move-Out Cleaning</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="cf-group">
+                <label for="cf-message">Tell us about your space</label>
+                <textarea
+                  id="cf-message"
+                  rows="5"
+                  placeholder="Rooms, square footage, timing, anything special…"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="cf-submit">Send message</button>
+              <p class="cf-note" id="cfNote"></p>
+            </form>
+          </div>
+
+          <!-- RIGHT: Contact info cards -->
+          <div class="contact-info-col">
+            <div class="info-card">
+              <div class="info-icon">
+                <svg width="20" height="20" fill="none" viewBox="0 0 24 24">
+                  <path
+                    d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"
+                    fill="#fff"
+                  />
+                </svg>
+              </div>
+              <div class="info-text">
+                <span class="info-label">Call us</span>
+                <span class="info-value">08166766620</span>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">
+                <svg width="20" height="20" fill="none" viewBox="0 0 24 24">
+                  <path
+                    d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                    fill="#fff"
+                  />
+                </svg>
+              </div>
+              <div class="info-text">
+                <span class="info-label">Email</span>
+                <span class="info-value">biocleanexperts24@gmail.com</span>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">
+                <svg width="20" height="20" fill="none" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5s2.5 1.1 2.5 2.5S13.4 11.5 12 11.5z"
+                    fill="#fff"
+                  />
+                </svg>
+              </div>
+              <div class="info-text">
+                <span class="info-label">Office</span>
+                <span class="info-value"
+                  >185 Uniport Road, Choba, Port Harcourt, Rivers State</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo-box">
+            <img
+              src="assets/image/bioclean-logo.png"
+              alt="BioClean Experts"
+              class="footer-logo-img"
+            />
+          </a>
+          <p class="footer-brand-desc">
+            Professional cleaning &amp; facility services. Trusted, safe, and
+            affordable — delivering spotless results across homes, offices and
+            industrial spaces in Port Harcourt.
+          </p>
+        </div>
+        <div class="footer-nav-col">
+          <h5 class="footer-col-title">Navigate</h5>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact-col">
+          <h5 class="footer-col-title">Contact</h5>
+          <ul class="footer-contact-list">
+            <li>
+              <svg width="16" height="16" fill="none" viewBox="0 0 24 24">
+                <path
+                  d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"
+                  fill="rgba(255,255,255,0.7)"
+                />
+              </svg>
+              08166766620
+            </li>
+            <li>
+              <svg width="16" height="16" fill="none" viewBox="0 0 24 24">
+                <path
+                  d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                  fill="rgba(255,255,255,0.7)"
+                />
+              </svg>
+              biocleanexperts24@gmail.com
+            </li>
+            <li>
+              <svg width="16" height="16" fill="none" viewBox="0 0 24 24">
+                <path
+                  d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5s2.5 1.1 2.5 2.5S13.4 11.5 12 11.5z"
+                  fill="rgba(255,255,255,0.7)"
+                />
+              </svg>
+              <span>185 Uniport Road, Choba, Port Harcourt, Rivers State</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <p>© 2026 BioClean Experts. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      (function () {
+        const form = document.getElementById("contactForm");
+        const note = document.getElementById("cfNote");
+        const WHATSAPP_NUMBER = "2348166766620";
+
+        if (!form) return;
+
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+
+          try {
+            const name = document.getElementById("cf-name").value.trim();
+            const email = document.getElementById("cf-email").value.trim();
+            const phone = document.getElementById("cf-phone").value.trim();
+            const service = document.getElementById("cf-service").value;
+            const message = document.getElementById("cf-message").value.trim();
+
+            if (!name || !email) {
+              note.textContent = "Please fill in your name and email.";
+              note.className = "cf-note error";
+              return false;
+            }
+
+            const lines = [
+              "New Quote Request — BioClean Experts",
+              "",
+              "Name: " + name,
+              "Email: " + email,
+              phone ? "Phone: " + phone : null,
+              service ? "Service: " + service : null,
+              message ? "Details: " + message : null,
+            ]
+              .filter(function (l) {
+                return l !== null;
+              })
+              .join("\n");
+
+            const encoded = encodeURIComponent(lines);
+            const url = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encoded;
+
+            window.open(url, "_blank");
+
+            note.textContent = "Opening WhatsApp with your message...";
+            note.className = "cf-note success";
+            form.reset();
+          } catch (err) {
+            console.error("WhatsApp form error:", err);
+            note.textContent = "Something went wrong. Please try again.";
+            note.className = "cf-note error";
+          }
+
+          return false;
+        });
+      })();
+    </script>
+  </body>
+</html>
